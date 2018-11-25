@@ -1,0 +1,98 @@
+body {
+	background-color: pink;
+}
+.heading {
+	text-align: center;
+	color: black;
+}
+h1 {
+	font-size: 50pt;
+	font-family: "Sofia";
+	margin: 20px 20px 20px 20px;
+}
+.fake:link {
+	text-decoration: none;
+	color:black;
+}
+.fake:visited {
+	text-decoration: none;
+	color:black;
+}
+.direct:link {
+	text-decoration: none;
+	color:black;
+}
+ul.direct{
+	list-style-type: none;
+	margin: 20px 20px 20px 20px;
+	padding: 0;
+	overflow: hidden;
+	text-align: center;
+}
+li.direct {
+	float: none;
+	display: inline-block;
+}
+.direct {
+	font-family: "Arial";
+	font-size: 15pt;
+}
+.content{
+	text-align: center;
+	color:black;
+	font-family: "Arial";
+}
+.baku{
+	height: auto;
+}
+.arch{
+	width: 50%;
+	height: auto;
+}
+.yona{
+	height: auto;
+}
+.kde{
+	width: 50%;
+	height: auto;
+}
+.qute{
+	width: 50%;
+	height:auto;
+}
+.haruhi{
+	height:auto;
+}
+.planet{
+	height:auto;
+}
+table, td, tr, th{
+	text-align: center;
+	border: 1px solid black;
+}
+.accel{
+	height:auto;
+}
+td{
+	text-align: center;
+	font-size: 23;
+	font-weight: bold;
+
+}
+table{
+	text-layout: fixed;
+	width: 70%;
+	border: 1px solid black;
+}
+th, td{
+	width: 500px;
+	height: 20px;
+	font-size:23;
+}
+img{
+	width: 100%;
+	height: auto;
+}
+.eva {
+	width: 76%;
+}
