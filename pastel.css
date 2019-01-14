@@ -248,7 +248,7 @@ transform: translateX(-50%);
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #ff4d6a;
+  background-color: #ffb2bf;
 }
 
 .dropdown-content a {
