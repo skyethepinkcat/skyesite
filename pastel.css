@@ -263,7 +263,7 @@ transform: translateX(-50%);
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #ff7ebf;
 }
 
 .dropdown:hover .dropdown-content {
