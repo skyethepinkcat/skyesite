@@ -6,10 +6,11 @@
     <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" type="text/css" title="pastel" href="pastel.css" \>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 </head>
 
-<body>
+<body id="body">
     <div class=heading>
 
         <a href="index.html"><img src="skyenetlogo.png" class="logo"></a>
@@ -91,9 +92,29 @@
         </h4>
     </div>
     <div class="content" align="center">
-        <iframe src="https://duckduckgo.com/search.html?prefill=Search DuckDuckGo&focus=yes" style="overflow:hidden;margin:0;padding:0;width:408px;height:40px;" frameborder="0"></iframe>
+	<input style="overflow:hidden;margin:0;padding:0;width:408px;height:40px;font-size:16px;" frameborder="0" placeHolder="Search" id="search"></input>
     </div>
     <img src="img/charlotte.png" class="watermark"> </img>
 </body>
+
+	<script>
+		var search = document.getElementById("search");
+		search.addEventListener("keydown", function (e) {
+			if (e.keyCode === 13) {
+				searchURL(e);
+			}
+		});
+		search.focus();
+		var body = document.getElementById("body")
+		body.addEventListener("keydown", function (e) {
+			if (e.keyCode === 16){
+				search.focus();
+			}
+		});
+		function searchURL(e){
+			console.log(e);
+			window.location = "https://duckduckgo.com/?q=" + document.getElementById('search').value;
+		}
+	</script>
 
 </html>

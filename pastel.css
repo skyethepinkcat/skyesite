@@ -311,3 +311,7 @@ img {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+#search{
+	background-color: #ffa3b3;
+	color: black;
+}
