@@ -5,11 +5,14 @@ body {
     height: 100%;
 
 }
+br {
+	line-height:.5vh;
+}
 
 .heading {
     text-align: center;
     color: black;
-    margin: 10px;
+    margin: 1vh 10px 0px 10px;
 }
 
 h1 {
@@ -41,7 +44,7 @@ h1 {
 
 .navbar {
     list-style-type: none;
-    margin: 20px 20px 20px 20px;
+    margin: 1vh 20px 1vh 20px;
     padding: 0;
     overflow: hidden;
     text-align: center;
@@ -259,7 +262,7 @@ img {
     font-size: 8vh;
     font-family: "Sofia";
     font-weight: lighter;
-    margin: 10px;
+    margin: 1vh;
 
 }
 
