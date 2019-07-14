@@ -6,99 +6,11 @@
     <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" type="text/css" title="pastel" href="pastel.css" \>
+    <link id="pageStyle" rel="stylesheet" type="text/css" title="pastel" href="light.css" \>
+    <link id="pageStyle" rel="stylesheet" type="text/css" title="pastel" href="main.css" \>
 
 </head>
-
-<body id="body">
-    <div class=heading>
-
-        <a href="index.html"><img src="skyenetlogo.png" class="logo"></a>
-        <h4>
-            <ul class="navbar">
-                <li class="direct">
-                    <div class="dropdown direct">
-                        <a class="direct" href="https://reddit.com">
-                            <button class="dropbtn direct">Social Media<i class=" fa fa-caret-down"></i></button></a>
-                        <div class="dropdown-content direct">
-                            <a href="https://reddit.com/">Reddit</a>
-                            <a href="https://twitter.com/">Twitter</a>
-                            <a href="https://queer.party/">Mastadon</a>
-                            <a href="https://facebook.com/">Facebook</a>
-                            <a href="https://tumblr.com/">Tumblr</a>
-                        </div>
-                    </div> |
-                </li>
-                <li class="direct">
-                    <div class="dropdown direct">
-                        <a class="direct" href="https://www.testudo.umd.edu/">
-                            <button class="dropbtn direct">School<i class=" fa fa-caret-down"></i></button></a>
-                        <div class="dropdown-content direct">
-                            <a class="direct" href="https://www.testudo.umd.edu/">Testudo</a>
-                            <a href="https://bcpsone.bcps.org/">BCPSone</a>
-                        </div>
-                    </div> |
-                </li>
-                <li class="direct">
-                    <div class="dropdown direct">
-                        <a class="direct" href="https://mail.tutanota.com/mail">
-                            <button class="dropbtn direct">Mail<i class=" fa fa-caret-down"></i></button></a>
-                        <div class="dropdown-content direct">
-                            <a class="direct" href="https://mail.tutanota.com/mail">Tutanota</a>
-                            <a href="https://mail.google.com/mail/u/0/#inbox">Gmail</a>
-                        </div>
-                    </div> |
-                </li>
-                <li class="direct">
-                    <div class="dropdown direct">
-                        <a class="direct" href="https://skyenet.online/nextcloud/index.php/login">
-                            <button class="dropbtn direct">Photos<i class=" fa fa-caret-down"></i></button></a>
-                        <div class="dropdown-content direct">
-                            <a href="https://skyenet.online/nextcloud/index.php/apps/gallery/">Nextcloud Photos</a>
-                            <a href="https://photos.google.com/">Google Photos</a>
-                        </div>
-                    </div> |
-                </li>
-                <li class="direct">
-                    <a class="direct" href="https://skyenet.online/nextcloud/index.php/apps/news/">RSS</a> |
-                </li>
-                <li class="direct">
-                    <div class="dropdown direct">
-                        <a class="direct" href="https://skyenet.online/nextcloud/index.php/login">
-                            <button class="dropbtn direct">Cloud<i class=" fa fa-caret-down"></i></button></a>
-                        <div class="dropdown-content direct">
-                            <a href="https://skyenet.online/nextcloud/index.php/login/">Nextcloud</a>
-                            <a href="https://drive.google.com">Google Drive</a>
-                        </div>
-                    </div> |
-                </li>
-                <li class="direct">
-                    <a class="direct" href="https://app.getpocket.com/">Pocket</a> |
-                </li>
-                <li class="direct">
-                    <div class="dropdown direct">
-                        <a class="direct" href="https://myanimelist.net">
-                            <button class="dropbtn direct">Anime<i class=" fa fa-caret-down"></i></button></a>
-                        <div class="dropdown-content direct">
-                            <a href="https://crunchyroll.com/">Crunchyroll</a>
-                            <a href="https://www.hidive.com">Hidive</a>
-                            <a href="https://netflix.com/">Netflix</a>
-                            <a href="https://myanimelist.net/">MAL</a>
-                            <a href="https://anidb.net/">AniDB</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </h4>
-    </div>
-    <div class="content" align="center">
-	<input style="overflow:hidden;margin:0;padding:0;width:50vh;height:5vh;font-size:2.5vh;" frameborder="0" placeHolder="Search" id="search"></input>
-    </div>
-    <div class="watermarkDiv">
-	    <img src="img/kase.png" class="watermark"> </img>
-    </div>
-</body>
-
+	<script src="styleSheet.js"></script>
 	<script>
 		var search = document.getElementById("search");
 		search.addEventListener("keydown", function (e) {
@@ -118,5 +30,98 @@
 			window.location = "https://www.startpage.com/do/dsearch?query=" + document.getElementById('search').value;
 		}
 	</script>
+
+	<body id="body">
+	    <div class=heading>
+
+		<a href="index.html"><img id="logo" src="img/icon.svg" class="logo"></a>
+		<h4>
+		    <ul class="navbar">
+			<li class="direct">
+			    <div class="dropdown direct">
+				<a class="direct" href="https://reddit.com">
+				    <button class="dropbtn direct">Social Media<i class=" fa fa-caret-down"></i></button></a>
+				<div class="dropdown-content direct">
+				    <a href="https://reddit.com/">Reddit</a>
+				    <a href="https://twitter.com/">Twitter</a>
+				    <a href="https://queer.party/">Mastadon</a>
+				    <a href="https://facebook.com/">Facebook</a>
+				    <a href="https://tumblr.com/">Tumblr</a>
+				</div>
+			    </div> |
+			</li>
+			<li class="direct">
+			    <div class="dropdown direct">
+				<a class="direct" href="https://www.testudo.umd.edu/">
+				    <button class="dropbtn direct">School<i class=" fa fa-caret-down"></i></button></a>
+				<div class="dropdown-content direct">
+				    <a class="direct" href="https://www.testudo.umd.edu/">Testudo</a>
+				    <a href="https://bcpsone.bcps.org/">BCPSone</a>
+				</div>
+			    </div> |
+			</li>
+			<li class="direct">
+			    <div class="dropdown direct">
+				<a class="direct" href="https://mail.tutanota.com/mail">
+				    <button class="dropbtn direct">Mail<i class=" fa fa-caret-down"></i></button></a>
+				<div class="dropdown-content direct">
+				    <a class="direct" href="https://mail.tutanota.com/mail">Tutanota</a>
+				    <a href="https://mail.google.com/mail/u/0/#inbox">Gmail</a>
+				</div>
+			    </div> |
+			</li>
+			<li class="direct">
+			    <div class="dropdown direct">
+				<a class="direct" href="https://skyenet.online/nextcloud/index.php/login">
+				    <button class="dropbtn direct">Photos<i class=" fa fa-caret-down"></i></button></a>
+				<div class="dropdown-content direct">
+				    <a href="https://skyenet.online/nextcloud/index.php/apps/gallery/">Nextcloud Photos</a>
+				    <a href="https://photos.google.com/">Google Photos</a>
+				</div>
+			    </div> |
+			</li>
+			<li class="direct">
+			    <a class="direct" href="https://skyenet.online/nextcloud/index.php/apps/news/">RSS</a> |
+			</li>
+			<li class="direct">
+			    <div class="dropdown direct">
+				<a class="direct" href="https://skyenet.online/nextcloud/index.php/login">
+				    <button class="dropbtn direct">Cloud<i class=" fa fa-caret-down"></i></button></a>
+				<div class="dropdown-content direct">
+				    <a href="https://skyenet.online/nextcloud/index.php/login/">Nextcloud</a>
+				    <a href="https://drive.google.com">Google Drive</a>
+				</div>
+			    </div> |
+			</li>
+			<li class="direct">
+			    <a class="direct" href="https://app.getpocket.com/">Pocket</a> |
+			</li>
+			<li class="direct">
+			    <div class="dropdown direct">
+				<a class="direct" href="https://myanimelist.net">
+				    <button class="dropbtn direct">Anime<i class=" fa fa-caret-down"></i></button></a>
+				<div class="dropdown-content direct">
+				    <a href="https://crunchyroll.com/">Crunchyroll</a>
+				    <a href="https://www.hidive.com">Hidive</a>
+				    <a href="https://netflix.com/">Netflix</a>
+				</div>
+			    </div>
+			</li>
+		    </ul>
+		</h4>
+	    </div>
+	    <div class="content" align="center">
+		<input style="overflow:hidden;margin:0;padding:0;width:50vh;height:5vh;font-size:2.5vh;" frameborder="0" placeHolder="Search" id="search"></input>
+	    </div>
+	    <div class="watermarkDiv">
+		    <img id="watermark" src="img/kase.png" class="watermark"> </img>
+	    </div>
+	    <label class="switch">
+		    <input onclick="swapStyleSheet()" id="style" type="checkbox">
+		    <span class="slider round"></span>
+	    </label>
+	</body>
+	<script src="run.js"></script>
+
 
 </html>
