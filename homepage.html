@@ -11,26 +11,7 @@
 
 </head>
 	<script src="styleSheet.js"></script>
-	<script>
-		var search = document.getElementById("search");
-		search.addEventListener("keydown", function (e) {
-			if (e.keyCode === 13) {
-				searchURL(e);
-			}
-		});
-		search.focus();
-		var body = document.getElementById("body")
-		body.addEventListener("keydown", function (e) {
-			if (e.keyCode === 16){
-				search.focus();
-			}
-		});
-		function searchURL(e){
-			console.log(e);
-			window.location = "https://www.startpage.com/do/dsearch?query=" + document.getElementById('search').value;
-		}
-	</script>
-
+	
 	<body id="body">
 	    <div class=heading>
 
@@ -122,6 +103,25 @@
 	    </label>
 	</body>
 	<script src="run.js"></script>
+	<script>
+		var search = document.getElementById("search");
+		search.addEventListener("keydown", function (e) {
+			if (e.keyCode === 13) {
+				searchURL(e);
+			}
+		});
+		search.focus();
+		var body = document.getElementById("body")
+		body.addEventListener("keydown", function (e) {
+			if (e.keyCode === 16){
+				search.focus();
+			}
+		});
+		function searchURL(e){
+			console.log(e);
+			window.location = "https://www.startpage.com/do/dsearch?query=" + document.getElementById('search').value;
+		}
+	</script>
 
 
 </html>
