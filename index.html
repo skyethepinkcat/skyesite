@@ -1,29 +1,62 @@
 <html>
     <head>
-        <title>Skyenet</title>
+	<title>Skyenet</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link id="pageStyle" rel="stylesheet" type="text/css" title="pastel" href="light.css" \>
+	<link id="pageStyle" rel="stylesheet" type="text/css" title="pastel" href="main.css" \>
 
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link id="pageStyle" rel="stylesheet" type="text/css" title="pastel" href="light.css" \>
-        <link id="pageStyle" rel="stylesheet" type="text/css" title="pastel" href="main.css" \>
+	<script src="styleSheet.js"></script>
+
     </head>
-    <script src="styleSheet.js"></script>
+
 
     <body>
 
-        <div id="DivContent"></div>
+	<div id="Header"></div>
+
+	<div class="cards row">
+	    <a href="https://github.com/skyejonke/yapp">
+		<div class="card col-3 ">
+		    <img src="img/yapp.png"></img>
+		    <div class="container">
+			<h4><b>yapp</b></h4>
+			<p>Yet Another Podcast Player</p>
+		    </div>
+		</div>
+	    </a>
+	    <a href="https://github.com/skyejonke/dog">
+		<div class="card col-3">
+		    <img src="img/dog.png"></img>
+		    <div class="container">
+			<h4><b>dog</b></h4>
+			<p>A program that lets you play with dogs on the command line!</p>
+		    </div>
+		</div>
+	    </a>
+	    <a href="https://gitlab.com/CatonsvilleHighSocialDevs/ddd">
+		<div class="card col-3">
+		    <img src="img/ddd.jpg"></img>
+		    <div class="container">
+			<h4><b>DDD</b></h4>
+			<p>A Discord Bot for the Catonsville High School Discord Server</p>
+		    </div>
+		</div>
+	    </a>
+
+	</div>
 
     </body>
 
     <script src="run.js"></script>
+    <script src="jquery.js"></script>
 
-    <script src="jquery.js"></script> 
-    <script> 
+    <script>
 
-    $(function(){
+	$(function(){
 
-      $("#DivContent").load("header.html"); 
+	    $("#Header").load("header.html");
 
-    });
+	});
 
     </script>
 </html>

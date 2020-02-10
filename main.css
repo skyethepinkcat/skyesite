@@ -1,18 +1,55 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+ [class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 95%;
+  }
+}
+
 body {
     background-color: var(--main-bg-color);
     display: flex;
     flex-flow: column;
     height: 100%;
+    margin: 0;
 
 }
 br {
-	line-height:.5vh;
+    line-height:.5vh;
 }
 
 .heading {
-    text-align: center;
+    text-align: left;
     color: var(--main-fg-color);
-    margin: 1vh 10px 0px 10px;
+    background-color: var(--main-bg-accent-color);
+    margin: 0px 0px 0px 0px;
 }
 
 h1 {
@@ -56,11 +93,13 @@ li.direct {
 }
 
 .direct {
-    font-family: "Arial";
+    font-family: "Sofia";
+    font-weight: lighter;
+
     color: var(--main-fg-color);
     border: 0;
     margin: 0;
-    font-size: 2.5vh;
+    font-size: 5vh;
 }
 
 .content {
@@ -108,10 +147,6 @@ th {
     border: 1px solid var(--main-fg-color);
 }
 
-.accel {
-    height: auto;
-}
-
 td {
     text-align: center;
     font-size: 23;
@@ -153,49 +188,9 @@ img {
 }
 
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
+    height: 40vh;
 }
 
-/* Create four equal columns that sits next to each other */
-.column {
-    flex: 25%;
-    max-width: 40%;
-    padding: 0 4px;
-}
-
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-    .column {
-        flex: 50%;
-        max-width: 50%;
-    }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column {
-        flex: 100%;
-        max-width: 100%;
-    }
-}
-
-.grid {
-    margin: auto;
-    width: 80%;
-}
-
-/* Container holding the image and the text */
-.container {
-    position: relative;
-    text-align: center;
-}
 
 /* Bottom left text */
 .bottom-left {
@@ -209,7 +204,7 @@ img {
     position: absolute;
     top: 8px;
     left: 16px;
-    font-size: 1vw;
+    font-size: 1vh;
 }
 
 /* Top right text */
@@ -246,8 +241,8 @@ img {
     transform: translateX(-50%);
 }
 .watermarkDiv {
-	z-index: -1;
-	flex-grow:1;
+    z-index: -1;
+    flex-grow:1;
 }
 
 .logo {
@@ -269,7 +264,7 @@ img {
     flex-direction: row;
     margin: auto;
     padding: 10px;
-    justify-content: center;
+    justify-content: left;
 }
 
 .link:link {
@@ -328,19 +323,19 @@ img {
 
 
 #search{
-	background-color: var(--main-bg-accent-color);
-	color: var(--main-fg-color);
-	border: 2px solid var(--main-fg-accent-color);
+    background-color: var(--main-bg-accent-color);
+    color: var(--main-fg-color);
+    border: 2px solid var(--main-fg-accent-color);
 }
 .switch {
 
-  position: relative;
+    position: relative;
 
-  display: inline-block;
+    display: inline-block;
 
-  width: 60px;
+    width: 60px;
 
-  height: 34px;
+    height: 34px;
 
 }
 
@@ -350,11 +345,11 @@ img {
 
 .switch input {
 
-  opacity: 0;
+    opacity: 0;
 
-  width: 0;
+    width: 0;
 
-  height: 0;
+    height: 0;
 
 }
 
@@ -364,25 +359,25 @@ img {
 
 .slider {
 
-  position: absolute;
+    position: absolute;
 
-  cursor: pointer;
+    cursor: pointer;
 
-  top: 0;
+    top: 0;
 
-  left: 0;
+    left: 0;
 
-  right: 0;
+    right: 0;
 
-  bottom: 0;
-  
-  background-color: var(--main-bg-color);
-  
-  border: 1px solid var(--main-fg-color);
+    bottom: 0;
 
-  -webkit-transition: .4s;
+    background-color: var(--main-bg-color);
 
-  transition: .4s;
+    border: 1px solid var(--main-fg-color);
+
+    -webkit-transition: .4s;
+
+    transition: .4s;
 
 }
 
@@ -390,23 +385,23 @@ img {
 
 .slider:before {
 
-  position: absolute;
+    position: absolute;
 
-  content: "";
+    content: "";
 
-  height: 26px;
+    height: 26px;
 
-  width: 26px;
+    width: 26px;
 
-  left: 4px;
+    left: 4px;
 
-  bottom: 4px;
+    bottom: 4px;
 
-  border: 1px solid var(--main-fg-color);
+    border: 1px solid var(--main-fg-color);
 
-  -webkit-transition: .4s;
+    -webkit-transition: .4s;
 
-  transition: .4s;
+    transition: .4s;
 
 }
 
@@ -414,7 +409,7 @@ img {
 
 input:checked + .slider {
 
-  border: 1px solid var(--main-fg-color);
+    border: 1px solid var(--main-fg-color);
 
 }
 
@@ -422,19 +417,18 @@ input:checked + .slider {
 
 input:focus + .slider {
 
-  box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px #2196F3;
 
 }
 
 
-
 input:checked + .slider:before {
 
-  -webkit-transform: translateX(26px);
+    -webkit-transform: translateX(26px);
 
-  -ms-transform: translateX(26px);
+    -ms-transform: translateX(26px);
 
-  transform: translateX(26px);
+    transform: translateX(26px);
 
 }
 
@@ -444,7 +438,7 @@ input:checked + .slider:before {
 
 .slider.round {
 
-  border-radius: 34px;
+    border-radius: 34px;
 
 }
 
@@ -452,6 +446,58 @@ input:checked + .slider:before {
 
 .slider.round:before {
 
-  border-radius: 50%;
+    border-radius: 50%;
 
+}
+
+.cards {
+}
+
+.card {
+    padding: 0px;
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    float: left;
+    transition: 0.3s;
+    background-color: var(--main-bg-accent-color);
+    border-radius: 2vh; /* 5px rounded corners */
+    height: 100%;
+    margin: 5vh 2vw 2vh 2vw;
+
+}
+
+.card:link{
+    text-decoration: none;
+    color: var(--main-fg-color);
+}
+
+.container:link{
+    text-decoration: none;
+    color: var(--main-fg-color);
+}
+.container:visited{
+    text-decoration: none;
+    color: var(--main-fg-color);
+}
+
+.card img{
+    height: 55%;
+    border-top-right-radius: 1vh; /* 5px rounded corners */
+    border-top-left-radius: 1vh; /* 5px rounded corners */
+    object-fit: cover;
+}
+
+a{
+    text-decoration: none;
+    color: var(--main-fg-color);
+    font-size: 1.5vh;
+}
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
 }
