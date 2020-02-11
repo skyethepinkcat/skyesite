@@ -1,37 +1,35 @@
 <html> <head>
-	<title>Skyenet</title>
-	<meta name='viewport' content='width=device-width, initial-scale=1'>
-	<link id="pageStyle" rel="stylesheet" type="text/css" title="pastel" href="light.css" \>
-	<link id="pageStyle" rel="stylesheet" type="text/css" title="pastel" href="main.css" \>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Skyenet</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link id="pageStyle" rel="stylesheet" type="text/css" title="pastel" href="light.css" \>
+        <link id="pageStyle" rel="stylesheet" type="text/css" title="pastel" href="main.css" \>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<script src="styleSheet.js"></script>
+        <script src="styleSheet.js"></script>
 
     </head>
 
 
     <body>
-	<div id="Header"></div>
-	<div id="file"></div>
+        <div id="Header"></div>
+        <div id="file"></div>
     </body>
 
     <script src="run.js"></script>
     <script src="jquery.js"></script>
 
     <script>
-	$(function(){
-	    $("#Header").load("header.html");
-	    $("#file").load("main.html");
-	});
-    </script>
-    <script>
-	function myFunction() {
-	    var x = document.getElementById("myTopnav");
-	    if (x.className === "topnav") {
-		x.className += " responsive";
-	    } else {
-		x.className = "topnav";
-	    }
-	}
+        $(function(){
+            $("#Header").load("header.html");
+            $("#file").load("main.html");
+        });
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
     </script>
 </html>
