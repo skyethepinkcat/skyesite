@@ -446,7 +446,7 @@ a{
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: var(--main-bg-accent-color);
+    background-image: linear-gradient(to right, var(--main-bg-accent-color), var(--main-fg-accent-color) 25%);
     overflow: hidden;
 }
 
@@ -476,7 +476,8 @@ a{
 }
 /* Add an active class to highlight the current page */
 .topnav a.active {
-    background-color: var(--main-fg-accent-color);
+    #background-color: var(--main-bg-accent-color);
+    #background-image: linear-gradient(to right, var(--main-bg-accent-color) 85%, var(--main-fg-accent-color));
     color: var(--main-fg-color);
 }
 

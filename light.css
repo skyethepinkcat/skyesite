@@ -1,7 +1,9 @@
 :root{
 	--main-bg-color: #F7BACF;
+	--main-bg-color:  #8c8c8c;
 	--main-fg-color: #0D0009;
 	--main-bg-accent-color: #EBA5BC;
+	--main-bg-accent-color: #ffb3cb;
 	--main-fg-accent-color: #C7C7C7;
 	--main-misc-color: #E6A3BA;
 	--main-emphasis-font-family: "Sofia";
