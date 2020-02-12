@@ -1,6 +1,6 @@
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -16,263 +16,263 @@
 .col-12 {width: 100%;}
 
 [class*="col-"] {
-    float: left;
+  float: left;
 }
 .row::after {
-    content: "";
-    clear: both;
-    display: table;
+  content: "";
+  clear: both;
+  display: table;
 }
 
 @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-        width: 90%;
-    }
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 90%;
+  }
 }
 
 body {
-    background-color: var(--main-bg-color);
-    display: flex;
-    flex-flow: column;
-    height: 100%;
-    margin: 0;
+  background-color: var(--main-bg-color);
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  margin: 0;
 
 }
 br {
-    line-height:.5vh;
+  line-height:.5vh;
 }
 
 .heading {
-    color: var(--main-fg-color);
-    background-color: var(--main-bg-accent-color);
-    margin: 0px 0px 0px 0px;
+  color: var(--main-fg-color);
+  background-color: var(--main-bg-accent-color);
+  margin: 0px 0px 0px 0px;
 }
 
 h1 {
-    font-size: 50pt;
-    font-family: "Sofia";
-    margin: 20px 20px 20px 20px;
-    font-weight: lighter;
+  font-size: 50pt;
+  font-family: "Sofia";
+  margin: 20px 20px 20px 20px;
+  font-weight: lighter;
 }
 
 .top:link {
-    text-decoration: none;
-    color: var(--main-fg-color);
+  text-decoration: none;
+  color: var(--main-fg-color);
 }
 
 .top:visited {
-    text-decoration: none;
-    color: var(--main-fg-color);
+  text-decoration: none;
+  color: var(--main-fg-color);
 }
 
 .direct:link {
-    text-decoration: none;
-    color: var(--main-fg-color);
+  text-decoration: none;
+  color: var(--main-fg-color);
 }
 
 .direct:visited {
-    text-decoration: none;
-    color: var(--main-fg-color);
+  text-decoration: none;
+  color: var(--main-fg-color);
 }
 
 .navbar {
-    list-style-type: none;
-    margin: 1vh 20px 1vh 20px;
-    padding: 0;
-    overflow: hidden;
-    text-align: center;
+  list-style-type: none;
+  margin: 1vh 20px 1vh 20px;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
 
 }
 
 li.direct {
-    display: inline-block;
+  display: inline-block;
 }
 
 .direct {
-    font-family: "Sofia";
-    font-weight: --var(--main-emphasis-font-weight);
-    font-weight: lighter;
+  font-family: "Sofia";
+  font-weight: --var(--main-emphasis-font-weight);
+  font-weight: lighter;
 
-    color: var(--main-fg-color);
-    border: 0;
-    margin: 0;
-    font-size: 5vh;
+  color: var(--main-fg-color);
+  border: 0;
+  margin: 0;
+  font-size: 5vh;
 }
 
 .content {
-    text-align: center;
-    color: var(--main-fg-color);
-    font-family: "Arial";
+  text-align: center;
+  color: var(--main-fg-color);
+  font-family: "Arial";
 }
 
 .about {
-    font-size: 15pt;
-    line-height: 22pt;
-    text-align: left;
-    margin: 1vh 2vw 1vh 2vw;
+  font-size: 15pt;
+  line-height: 22pt;
+  text-align: left;
+  margin: 1vh 2vw 1vh 2vw;
 }
 
 .poem {
-    font-size: 15pt;
-    font-family: "Times New Roman";
-    color: var(--main-fg-color);
+  font-size: 15pt;
+  font-family: "Times New Roman";
+  color: var(--main-fg-color);
 }
 
 .row {
-    height: 39vh;
-    margin: 1.5vh 0vw 1.5vh 0vw;
+  height: 39vh;
+  margin: 1.5vh 0vw 1.5vh 0vw;
 }
 
 /* Bottom left text */
 .bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
 }
 
 /* Top left text */
 .top-left {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-    font-size: 1vh;
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 1vh;
 }
 
 /* Top right text */
 .top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
+  position: absolute;
+  top: 8px;
+  right: 16px;
 }
 
 /* Bottom right text */
 .bottom-right {
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
 }
 
 /* Centered text */
 .centered {
-    float: center;
+  float: center;
 }
 
 .watermark {
-    position: absolute;
-    bottom: 0px;
-    width: auto;
-    height: 70vh;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    left: 50%;
-    transform: translateX(-50%);
+  position: absolute;
+  bottom: 0px;
+  width: auto;
+  height: 70vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .watermarkDiv {
-    z-index: -1;
-    flex-grow:1;
+  z-index: -1;
+  flex-grow:1;
 }
 
 .logo {
-    position: relative;
-    bottom: .7vh;
-    padding-right: .5vw;
+  position: relative;
+  bottom: .7vh;
+  padding-right: .5vw;
 
-    height: var(--top-icon-size);
-    float: left;
+  height: var(--top-icon-size);
+  float: left;
 }
 
 .logotxt {
-    float: left;
-    text-align: center;
-    font-size: 8vh;
-    font-family: var(--main-emphasis-font-family);
-    font-weight: lighter;
-    margin: 1vh;
+  float: left;
+  text-align: center;
+  font-size: 8vh;
+  font-family: var(--main-emphasis-font-family);
+  font-weight: lighter;
+  margin: 1vh;
 
 }
 
 .divlogo {
-    /*
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    margin: auto;
-    padding: 10px;
-    justify-content: left;
-     */
+  /*
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: auto;
+  padding: 10px;
+  justify-content: left;
+   */
 }
 
 .link:link {
-    text-decoration: none;
-    color: var(--main-fg-color);
+  text-decoration: none;
+  color: var(--main-fg-color);
 }
 
 .link:visited {
-    text-decoration: none;
-    color: var(--main-fg-color);
+  text-decoration: none;
+  color: var(--main-fg-color);
 }
 
 .dropdown {
-    display: inherit;
+  display: inherit;
 }
 
 .dropbtn {
-    padding: 0;
+  padding: 0;
 }
 
 .dropdown .dropbtn {
-    border: none;
-    outline: none;
-    background-color: inherit;
-    font: inherit;
-    margin: 0;
-    cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+  cursor: pointer;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: var(--main-bg-accent-color);
-    border: 2px solid var(--main-fg-accent-color);
+  display: none;
+  position: absolute;
+  background-color: var(--main-bg-accent-color);
+  border: 2px solid var(--main-fg-accent-color);
 }
 
 .dropdown-content a {
-    float: none;
-    color: var(--main-fg-color);
-    border-top: 2px solid var(--main-bg-accent-color);
-    border-bottom: 2px solid var(--main-bg-accent-color);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+  float: none;
+  color: var(--main-fg-color);
+  border-top: 2px solid var(--main-bg-accent-color);
+  border-bottom: 2px solid var(--main-bg-accent-color);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
 
 .dropdown-content a:hover {
-    border-top: 2px solid var(--main-fg-accent-color);
-    border-bottom: 2px solid var(--main-fg-accent-color);
+  border-top: 2px solid var(--main-fg-accent-color);
+  border-bottom: 2px solid var(--main-fg-accent-color);
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
 
 
 #search{
-    background-color: var(--main-bg-accent-color);
-    color: var(--main-fg-color);
-    border: 2px solid var(--main-fg-accent-color);
+  background-color: var(--main-bg-accent-color);
+  color: var(--main-fg-color);
+  border: 2px solid var(--main-fg-accent-color);
 }
 .switch {
 
-    position: relative;
+  position: relative;
 
-    display: inline-block;
+  display: inline-block;
 
-    width: 60px;
+  width: 60px;
 
-    height: 34px;
+  height: 34px;
 
 }
 
@@ -282,11 +282,11 @@ li.direct {
 
 .switch input {
 
-    opacity: 0;
+  opacity: 0;
 
-    width: 0;
+  width: 0;
 
-    height: 0;
+  height: 0;
 
 }
 
@@ -296,25 +296,25 @@ li.direct {
 
 .slider {
 
-    position: absolute;
+  position: absolute;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    top: 0;
+  top: 0;
 
-    left: 0;
+  left: 0;
 
-    right: 0;
+  right: 0;
 
-    bottom: 0;
+  bottom: 0;
 
-    background-color: var(--main-bg-color);
+  background-color: var(--main-bg-color);
 
-    border: 1px solid var(--main-fg-color);
+  border: 1px solid var(--main-fg-color);
 
-    -webkit-transition: .4s;
+  -webkit-transition: .4s;
 
-    transition: .4s;
+  transition: .4s;
 
 }
 
@@ -322,23 +322,23 @@ li.direct {
 
 .slider:before {
 
-    position: absolute;
+  position: absolute;
 
-    content: "";
+  content: "";
 
-    height: 26px;
+  height: 26px;
 
-    width: 26px;
+  width: 26px;
 
-    left: 4px;
+  left: 4px;
 
-    bottom: 4px;
+  bottom: 4px;
 
-    border: 1px solid var(--main-fg-color);
+  border: 1px solid var(--main-fg-color);
 
-    -webkit-transition: .4s;
+  -webkit-transition: .4s;
 
-    transition: .4s;
+  transition: .4s;
 
 }
 
@@ -346,7 +346,7 @@ li.direct {
 
 input:checked + .slider {
 
-    border: 1px solid var(--main-fg-color);
+  border: 1px solid var(--main-fg-color);
 
 }
 
@@ -354,18 +354,18 @@ input:checked + .slider {
 
 input:focus + .slider {
 
-    box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #2196F3;
 
 }
 
 
 input:checked + .slider:before {
 
-    -webkit-transform: translateX(26px);
+  -webkit-transform: translateX(26px);
 
-    -ms-transform: translateX(26px);
+  -ms-transform: translateX(26px);
 
-    transform: translateX(26px);
+  transform: translateX(26px);
 
 }
 
@@ -375,7 +375,7 @@ input:checked + .slider:before {
 
 .slider.round {
 
-    border-radius: 34px;
+  border-radius: 34px;
 
 }
 
@@ -383,7 +383,7 @@ input:checked + .slider:before {
 
 .slider.round:before {
 
-    border-radius: 50%;
+  border-radius: 50%;
 
 }
 
@@ -391,147 +391,169 @@ input:checked + .slider:before {
 }
 
 .card {
-    padding: 0px;
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    float: left;
-    transition: 0.3s;
-    background-color: var(--main-bg-accent-color);
-    border-radius: 2vh; /* 5px rounded corners */
-    height: 100%;
-    margin: 0vh 4vw 0vh 4vw;
+  padding: 0px;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  float: left;
+  transition: 0.3s;
+  background-color: var(--main-bg-accent-color);
+  border-radius: 2vh; /* 5px rounded corners */
+  height: 100%;
+  margin: 0vh 4vw 0vh 4vw;
 
 }
 
-.card h4{
-    text-align: center;
+.card {
+  top: 50%;
 }
+
+.seperate{
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  font-size: 2.5vh;
+  text-align: center;
+  height: 7vh;
+}
+
 
 .card:link{
-    text-decoration: none;
-    color: var(--main-fg-color);
+  text-decoration: none;
+  color: var(--main-fg-color);
 }
 
 .container:link{
-    text-decoration: none;
-    color: var(--main-fg-color);
+  text-decoration: none;
+  color: var(--main-fg-color);
 }
 .container:visited{
-    text-decoration: none;
-    color: var(--main-fg-color);
+  text-decoration: none;
+  color: var(--main-fg-color);
 }
 
 .card img{
-    height: 70%;
-    width: 100%;
-    border-top-right-radius: 1vh; /* 5px rounded corners */
-    border-top-left-radius: 1vh; /* 5px rounded corners */
-    object-fit: cover;
+  height: 70%;
+  width: 100%;
+  border-top-right-radius: 1vh; /* 5px rounded corners */
+  border-top-left-radius: 1vh; /* 5px rounded corners */
+  object-fit: cover;
 }
 
 a{
-    text-decoration: none;
-    color: var(--main-fg-color);
-    font-size: 1.5vh;
+  text-decoration: none;
+  color: var(--main-fg-color);
+  font-size: 1.5vh;
 }
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 /* Add some padding inside the card container */
 .container {
-    padding: 2px 16px;
+  padding: 2px 16px;
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-image: linear-gradient(to right, var(--main-bg-accent-color), var(--main-fg-accent-color) 25%);
-    overflow: hidden;
+  background-image: linear-gradient(to right, var(--main-bg-accent-color), var(--main-fg-accent-color) 25%);
+  overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    float: left;
-    display: block;
-    color: var(--main-fg-color);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: var(--main-emphasis-font-family);
-    font-weight: lighter;
-    font-size: var(--top-text-size);
-    height: var(--top-height);
+  float: left;
+  display: block;
+  color: var(--main-fg-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: var(--main-emphasis-font-family);
+  font-weight: lighter;
+  font-size: var(--top-text-size);
+  height: var(--top-height);
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: var(--main-bg-color);
-    color: black;
+  background-color: var(--main-bg-color);
+  color: var(--main-fg-accent-color);
 }
 
 .topnav .icon:hover {
-    background-color: var(--main-fg-accent-color);
+  background-color: #00000000;
+  color: black;
 
 }
 /* Add an active class to highlight the current page */
 .topnav a.active {
-    #background-color: var(--main-bg-accent-color);
-    #background-image: linear-gradient(to right, var(--main-bg-accent-color) 85%, var(--main-fg-accent-color));
-    color: var(--main-fg-color);
+  #background-color: var(--main-bg-accent-color);
+  #background-image: linear-gradient(to right, var(--main-bg-accent-color) 85%, var(--main-fg-accent-color));
+  color: var(--main-fg-color);
 }
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
-    position: relative;
-    top: 1vh;
-    display: none;
-    background-color: var(--main-fg-accent-color);
+  position: relative;
+  top: .5vh;
+  display: none;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
-    .topnav {
-        background-color: var(--main-fg-accent-color);
-    }
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav {
+    background-color: var(--main-fg-accent-color);
+  }
 
-    /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-    @media screen and (max-width: 600px) {
-        .topnav.responsive {position: relative;}
-        .topnav.responsive a.icon {
-            background-color: var(--main-fg-accent-color);
-            position: absolute;
-            right: 0;
-            top: 1vh;
-        }
-        .topnav.responsive a {
-            float: none;
-            display: block;
-            text-align: left;
-        }
-        .topnav.responsive .active{
-            background-color: var(--main-fg-accent-color);
-        }
-    }
+  .avatar{
+    width: 100%;
+  }
 }
 
-    .invisible {
-        visibility: hidden;
-    }
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+    background-image: linear-gradient(var(--main-bg-accent-color), var(--main-fg-accent-color) 34%);
+  }
+  .topnav.responsive a.icon {
+    /*background-color: var(--main-fg-accent-color); */
+    position: absolute;
+    right: 0;
+    top: .5vh;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .active{
 
-    .avatar {
-        padding: 0px;
-    }
+  }
+  .card{
+    margin-top: 2vh;
+  }
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.avatar {
+  padding: 0px;
+}
 
 
-    img.avatar{
-        height: 100%;
-        border-top-left-radius: 1vh; /* 5px rounded corners */
-        border-top-right-radius: 0vh; /* 5px rounded corners */
-        border-bottom-left-radius: 1vh; /* 5px rounded corners */
-    }
+
+@media screen and (min-width: 600px) {
+  img.avatar{
+    height: 100%;
+    border-top-left-radius: 1vh; /* 5px rounded corners */
+    border-top-right-radius: 0vh; /* 5px rounded corners */
+    border-bottom-left-radius: 1vh; /* 5px rounded corners */
+  }
+}
