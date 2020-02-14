@@ -219,15 +219,7 @@ li.direct {
    */
 }
 
-.link:link {
-  text-decoration: none;
-  color: var(--main-fg-color);
-}
 
-.link:visited {
-  text-decoration: none;
-  color: var(--main-fg-color);
-}
 
 .dropdown {
   display: inherit;
@@ -442,18 +434,23 @@ input:checked + .slider:before {
 .container:link{
   text-decoration: none;
 color: var(--main-fg-color); }
+
 .container:visited{
   text-decoration: none;
   color: var(--main-fg-color);
 }
 
 .card img{
-  height: 70%;
-  width: 100%;
   border-top-right-radius: 1vh; /* 5px rounded corners */
   border-top-left-radius: 1vh; /* 5px rounded corners */
   object-fit: cover;
 }
+
+.regular-image img{
+  height: 70%;
+  width: 100%;
+}
+
 
 a{
   text-decoration: none;
@@ -461,7 +458,7 @@ a{
   font-size: 1.5vh;
 }
 /* On mouse-over, add a deeper shadow */
-.card:hover {
+.card:hover, .card:active{
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
@@ -537,13 +534,10 @@ a{
     font-size: 1.5vh;
   }
 
-  #avatar img{
+  .avatar{
     height: 30vh;
   }
 
-  #avatar:hover img {
-    height: 30vh;
-  }
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
@@ -613,7 +607,19 @@ a{
   margin: 0vh 4vw 0vh 4vw;
   top: 50%;
    */
+z-index: 1;
 }
+.poems:hover, .poems:active{
+  z-index: 2;
+}
+
+
+A Boy and a Girl
+
+
+
+In the Sixth Grade, two eyes met.
+
 
 .extend {
   transition: height .3s;
@@ -627,11 +633,16 @@ a{
    */
 }
 
-#beach:hover, #beach:active { height:96vh; }
-#girl:hover, #girl:active { height:105vh; }
-#social:hover, #social:active { height:54vh; }
+#beach:hover, #beach:active { height:95vh; }
+#girl:hover, #girl:active { height:104vh; }
+#who:hover, #who:active { height: 83vh; }
+#devil {height: 15vh;}
+#devil:hover, #devil:active { height: 23vh; }
+#gentoo:hover, #gentoo:active { height: 60vh; }
+
+#social:hover, #social:active { height:62vh; }
 #school:hover, #school:active { height:25vh; }
-#dev:hover, #dev:active { height: 49vh; }
+#dev:hover, #dev:active { height: 53vh; }
 #mail:hover, #mail:active {height: 25vh; }
 #feeds:hover, #feeds:active {height: 15vh; }
 #media:hover, #media:active {height: 35vh; }
@@ -658,4 +669,12 @@ a{
 .home-card {
   margin-left: 1vw;
   margin-right: 1vw;
+}
+
+.blue-links a{
+  text-decoration: underline;
+}
+
+#about{
+  height: 38vh;
 }
