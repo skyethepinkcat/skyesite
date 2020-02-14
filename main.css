@@ -1,336 +1,275 @@
+
+* {
+  box-sizing: border-box;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.col6-1 {width: 14.2856%;}
+.col6-2 {width: 28.57%;}
+.col6-3 {width: 42.857%;}
+.col6-4 {width: 57.142%;}
+.col6-5 {width: 71.4276%;}
+.col6-6 {width: 85.713%;}
+.col6-6 {width: 100%;}
+
+
+[class*="col-"] {
+  float: left;
+}
+[class*="col6-"] {
+  float: left;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 90%;
+  }
+  [class*="col6-"] {
+    width: 90%;
+  }
+}
+
 body {
-    background-color: var(--main-bg-color);
-    display: flex;
-    flex-flow: column;
-    height: 100%;
+  background-color: var(--main-bg-color);
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  margin: 0;
 
 }
 br {
-	line-height:.5vh;
+  line-height:.5vh;
 }
 
 .heading {
-    text-align: center;
-    color: var(--main-fg-color);
-    margin: 1vh 10px 0px 10px;
+  color: var(--main-fg-color);
+  background-color: var(--main-bg-accent-color);
+  margin: 0px 0px 0px 0px;
 }
 
 h1 {
-    font-size: 50pt;
-    font-family: "Sofia";
-    margin: 20px 20px 20px 20px;
-    font-weight: lighter;
+  font-size: 50pt;
+  font-family: "Sofia";
+  margin: 20px 20px 20px 20px;
+  font-weight: lighter;
 }
 
 .top:link {
-    text-decoration: none;
-    color: var(--main-fg-color);
+  text-decoration: none;
+  color: var(--main-fg-color);
 }
 
 .top:visited {
-    text-decoration: none;
-    color: var(--main-fg-color);
+  text-decoration: none;
+  color: var(--main-fg-color);
 }
 
 .direct:link {
-    text-decoration: none;
-    color: var(--main-fg-color);
+  text-decoration: none;
+  color: var(--main-fg-color);
 }
 
 .direct:visited {
-    text-decoration: none;
-    color: var(--main-fg-color);
+  text-decoration: none;
+  color: var(--main-fg-color);
 }
 
 .navbar {
-    list-style-type: none;
-    margin: 1vh 20px 1vh 20px;
-    padding: 0;
-    overflow: hidden;
-    text-align: center;
+  list-style-type: none;
+  margin: 1vh 20px 1vh 20px;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
 
 }
 
 li.direct {
-    display: inline-block;
+  display: inline-block;
 }
 
 .direct {
-    font-family: "Arial";
-    color: var(--main-fg-color);
-    border: 0;
-    margin: 0;
-    font-size: 2.5vh;
+  font-family: "Sofia";
+  font-weight: --var(--main-emphasis-font-weight);
+  font-weight: lighter;
+
+  color: var(--main-fg-color);
+  border: 0;
+  margin: 0;
+  font-size: 5vh;
 }
 
 .content {
-    text-align: center;
-    color: var(--main-fg-color);
-    font-family: "Arial";
-}
-
-.baku {
-    height: auto;
-}
-
-.arch {
-    width: 50%;
-    height: auto;
-}
-
-.yona {
-    height: auto;
-}
-
-.kde {
-    width: 50%;
-    height: auto;
-}
-
-.firefox {
-    width: 50%;
-    height: auto;
-}
-
-.haruhi {
-    height: auto;
-}
-
-.current {
-    height: auto;
-}
-
-table,
-td,
-tr,
-th {
-    text-align: center;
-    border: 1px solid var(--main-fg-color);
-}
-
-.accel {
-    height: auto;
-}
-
-td {
-    text-align: center;
-    font-size: 23;
-    font-weight: bold;
-
-}
-
-table {
-    text-layout: fixed;
-    width: 70%;
-    border: 1px solid var(--main-fg-color);
-}
-
-th,
-td {
-    width: 500px;
-    height: 20px;
-    font-size: 23px;
-}
-
-img {
-    width: 100%;
-    height: auto;
-}
-
-.eva {
-    height: auto;
+  text-align: center;
+  color: var(--main-fg-color);
+  font-family: "Arial";
 }
 
 .about {
-    font-size: 15pt;
-    line-height: 22pt;
+  font-size: 15pt;
+  line-height: 22pt;
+  text-align: left;
+  margin: 1vh 2vw 1vh 2vw;
 }
 
 .poem {
-    font-size: 15pt;
-    font-family: "Times New Roman";
-    color: var(--main-fg-color);
+  font-size: 2vh;
+  font-family: "Times New Roman";
+  color: var(--main-fg-color);
 }
 
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-    flex: 25%;
-    max-width: 40%;
-    padding: 0 4px;
-}
-
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-    .column {
-        flex: 50%;
-        max-width: 50%;
-    }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column {
-        flex: 100%;
-        max-width: 100%;
-    }
-}
-
-.grid {
-    margin: auto;
-    width: 80%;
-}
-
-/* Container holding the image and the text */
-.container {
-    position: relative;
-    text-align: center;
+  height: 39vh;
+  margin: 1.5vh 0vw 1.5vh 0vw;
 }
 
 /* Bottom left text */
 .bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
 }
 
 /* Top left text */
 .top-left {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-    font-size: 1vw;
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 1vh;
 }
 
 /* Top right text */
 .top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
+  position: absolute;
+  top: 8px;
+  right: 16px;
 }
 
 /* Bottom right text */
 .bottom-right {
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
 }
 
 /* Centered text */
 .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  float: center;
 }
 
 .watermark {
-    position: absolute;
-    bottom: 0px;
-    width: auto;
-    height: 70vh;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    left: 50%;
-    transform: translateX(-50%);
+  position: absolute;
+  bottom: 0px;
+  width: auto;
+  height: 70vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .watermarkDiv {
-	z-index: -1;
-	flex-grow:1;
+  z-index: -1;
+  flex-grow:1;
 }
 
 .logo {
-    height: 10vh;
-    width: auto;
+  position: relative;
+  bottom: .7vh;
+  padding-right: .5vw;
+
+  height: var(--top-icon-size);
+  float: left;
 }
 
 .logotxt {
-    font-size: 8vh;
-    font-family: "Sofia";
-    font-weight: lighter;
-    margin: 1vh;
+  float: left;
+  text-align: center;
+  font-size: 8vh;
+  font-family: var(--main-emphasis-font-family);
+  font-weight: lighter;
+  margin: 1vh;
 
 }
 
 .divlogo {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    margin: auto;
-    padding: 10px;
-    justify-content: center;
+  /*
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: auto;
+  padding: 10px;
+  justify-content: left;
+   */
 }
 
-.link:link {
-    text-decoration: none;
-    color: var(--main-fg-color);
-}
 
-.link:visited {
-    text-decoration: none;
-    color: var(--main-fg-color);
-}
 
 .dropdown {
-    display: inherit;
+  display: inherit;
 }
 
 .dropbtn {
-    padding: 0;
+  padding: 0;
 }
 
 .dropdown .dropbtn {
-    border: none;
-    outline: none;
-    background-color: inherit;
-    font: inherit;
-    margin: 0;
-    cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+  cursor: pointer;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: var(--main-bg-accent-color);
-    border: 2px solid var(--main-fg-accent-color);
+  display: none;
+  position: absolute;
+  background-color: var(--main-bg-accent-color);
+  border: 2px solid var(--main-fg-accent-color);
 }
 
 .dropdown-content a {
-    float: none;
-    color: var(--main-fg-color);
-    border-top: 2px solid var(--main-bg-accent-color);
-    border-bottom: 2px solid var(--main-bg-accent-color);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+  float: none;
+  color: var(--main-fg-color);
+  border-top: 2px solid var(--main-bg-accent-color);
+  border-bottom: 2px solid var(--main-bg-accent-color);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
 
 .dropdown-content a:hover {
-    border-top: 2px solid var(--main-fg-accent-color);
-    border-bottom: 2px solid var(--main-fg-accent-color);
+  border-top: 2px solid var(--main-fg-accent-color);
+  border-bottom: 2px solid var(--main-fg-accent-color);
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
 
 
 #search{
-	background-color: var(--main-bg-accent-color);
-	color: var(--main-fg-color);
-	border: 2px solid var(--main-fg-accent-color);
+  background-color: var(--main-bg-accent-color);
+  color: var(--main-fg-color);
+  border: unset;
 }
 .switch {
 
@@ -375,9 +314,9 @@ img {
   right: 0;
 
   bottom: 0;
-  
+
   background-color: var(--main-bg-color);
-  
+
   border: 1px solid var(--main-fg-color);
 
   -webkit-transition: .4s;
@@ -427,7 +366,6 @@ input:focus + .slider {
 }
 
 
-
 input:checked + .slider:before {
 
   -webkit-transform: translateX(26px);
@@ -454,4 +392,289 @@ input:checked + .slider:before {
 
   border-radius: 50%;
 
+}
+
+.cards {
+}
+
+.card {
+  padding: 0px;
+  overflow: hidden;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  float: left;
+  transition: 0.3s;
+  background-color: var(--main-bg-accent-color);
+  border-radius: 2vh; /* 5px rounded corners */
+  height: 100%;
+  margin: 0vh 4vw 0vh 4vw;
+  top:50%;
+  font-size: 1em;
+
+}
+
+.card {
+  top: 50%;
+}
+
+.seperate{
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  font-size: 2.5vh;
+  text-align: center;
+  height: 7vh;
+}
+
+
+.card:link{
+  text-decoration: none;
+  color: var(--main-fg-color);
+}
+
+.container:link{
+  text-decoration: none;
+color: var(--main-fg-color); }
+
+.container:visited{
+  text-decoration: none;
+  color: var(--main-fg-color);
+}
+
+.card img{
+  border-top-right-radius: 1vh; /* 5px rounded corners */
+  border-top-left-radius: 1vh; /* 5px rounded corners */
+  object-fit: cover;
+}
+
+.regular-image img{
+  height: 70%;
+  width: 100%;
+}
+
+
+a{
+  text-decoration: none;
+  color: var(--main-fg-color);
+  font-size: 1.5vh;
+}
+/* On mouse-over, add a deeper shadow */
+.card:hover, .card:active{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  overflow:hidden;
+  padding: 2px 16px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-image: linear-gradient(to right, var(--main-bg-accent-color), var(--main-fg-accent-color) 25%);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: var(--main-fg-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: var(--main-emphasis-font-family);
+  font-weight: lighter;
+  font-size: var(--top-text-size);
+  height: var(--top-height);
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: var(--main-bg-color);
+  color: var(--main-fg-accent-color);
+}
+
+.topnav .icon:hover {
+  background-color: #00000000;
+  color: black;
+
+}
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  #background-color: var(--main-bg-accent-color);
+  #background-image: linear-gradient(to right, var(--main-bg-accent-color) 85%, var(--main-fg-accent-color));
+  color: var(--main-fg-color);
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  position: relative;
+  top: .5vh;
+  display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav {
+    background-color: var(--main-bg-accent-color);
+    background-image: initial;
+  }
+
+  .avatar{
+    width: 100%;
+  }
+
+  #about:hover, #about:active{
+    height: 66vh;
+    font-size: 1.5vh;
+  }
+
+  .avatar{
+    height: 30vh;
+  }
+
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+    background-image: linear-gradient(var(--main-bg-accent-color)20%, var(--main-fg-accent-color) 34%);
+  }
+  .topnav.responsive a.icon {
+    /*background-color: var(--main-fg-accent-color); */
+    position: absolute;
+    right: 0;
+    top: .5vh;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .active{
+
+  }
+  .card{
+    margin-top: 2vh;
+  }
+
+  .about{
+    font-size: initial;
+  }
+
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.avatar {
+  padding: 0px;
+}
+
+
+
+
+@media screen and (min-width: 600px) {
+  img.avatar{
+    height: 100%;
+    border-top-left-radius: 1vh; /* 5px rounded corners */
+    border-top-right-radius: 0vh; /* 5px rounded corners */
+    border-bottom-left-radius: 1vh; /* 5px rounded corners */
+  }
+}
+
+.poem-card{
+  margin: 1.5vh 0vw 1.5vh 0vw;
+}
+
+.poems{
+  height: 39vh;
+  font-size: 4vh;
+  /*padding: 0px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  float: left;
+  transition: 0.3s;
+  background-color: var(--main-bg-accent-color);
+  border-radius: 2vh;
+  height: 100%;
+  margin: 0vh 4vw 0vh 4vw;
+  top: 50%;
+   */
+z-index: 1;
+}
+.poems:hover, .poems:active{
+  z-index: 2;
+}
+
+
+A Boy and a Girl
+
+
+
+In the Sixth Grade, two eyes met.
+
+
+.extend {
+  transition: height .3s;
+  overflow: hidden;
+}
+
+.poems pre {
+  /*
+  margin-left: 20%;
+  margin-right: 30%;
+   */
+}
+
+#beach:hover, #beach:active { height:95vh; }
+#girl:hover, #girl:active { height:104vh; }
+#who:hover, #who:active { height: 83vh; }
+#devil {height: 15vh;}
+#devil:hover, #devil:active { height: 23vh; }
+#gentoo:hover, #gentoo:active { height: 60vh; }
+
+#social:hover, #social:active { height:62vh; }
+#school:hover, #school:active { height:25vh; }
+#dev:hover, #dev:active { height: 53vh; }
+#mail:hover, #mail:active {height: 25vh; }
+#feeds:hover, #feeds:active {height: 15vh; }
+#media:hover, #media:active {height: 35vh; }
+
+.normal-size {
+  font-size: 1.5vh;
+}
+
+.home {
+  height: 6vh;
+  font-weight: lighter;
+  color: var(--main-fg-color);
+  font-size: 4vh;
+  text-align: center;
+
+}
+.home, .home a {
+  font-size: 4.3vh;
+}
+.home:hover{
+  z-index: 10;
+}
+
+.home-card {
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+.blue-links a{
+  text-decoration: underline;
+}
+
+#about{
+  height: 38vh;
 }

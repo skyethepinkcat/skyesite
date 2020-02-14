@@ -1,98 +1,85 @@
-<html>
-
-<head>
-
+<html> <head>
     <title>Skyenet</title>
-
-    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link id="pageStyle" rel="stylesheet" type="text/css" title="pastel" href="light.css" \>
     <link id="pageStyle" rel="stylesheet" type="text/css" title="pastel" href="main.css" \>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-</head>
 
-	<script src="styleSheet.js"></script>
-<body>
-    <div class=heading>
-        <div class="divlogo">
-            <a href="index.html"><img id="logo" src="img/icon.svg" class="logo"></a><a href="index.html" class="link">
-                <div class="logotxt"> Skyenet</div>
-            </a>
+    <script src="styleSheet.js"></script>
+
+  </head>
+
+
+  <body>
+    <div id="Header"></div>
+    <div class="cards poem-card">
+        <div id="about" class="card col-11 blue-links">
+          <div class="col-4 avatar">
+            <img id="ava" class="avatar" src="img/skye.jpg"></img>
+          </div>
+          <div class="normal-size container col-7 blue-links" >
+            <h4><b>About Me</b></h4>
+
+            My name is Skye Jonke and my pronouns are she/her. I'm a university
+            student majoring in computer science. My hobbies include coding,
+            writing fiction, and watching anime. I'm particularly interested in
+            creating and contributing to Open Source code. I specialize in C++,
+            but I dabble in higher level programming languages like python.
+            <h4>Contact</h4>
+            If you want to contact me, please email me at skye@skyenet.online. </br></br>
+            I also have a mastadon account, <a href="https://queer.party/web/accounts/150573">biribiri12@queer.party</a>.</br></br>
+            
+          </div>
         </div>
-        <h4>
-            <ul class="direct">
-                <li class="direct">
-                    <a class="direct" href="about.html">About</a> |
-                </li>
-                <li class="direct">
-                    <a class="direct" href="poems.html">Poems</a> |
-                </li>
-                <li class="direct">
-                    <a class="direct" href="projects.html">Projects</a> |
-                </li>
-                <li class="direct">
-                    <a class="direct" href="homepage.html">Homepage</a> |
-                </li>
-            </ul>
-        </h4>
     </div>
-    <div align="center">
-        <h2 style="color:var(--main-fg-color)"> Current Favorites: </h2>
-    </div>
-    <div class="grid">
-        <div class="row">
-
-            <div class="column">
-                <div class="container">
-                    <a href="https://myanimelist.net/anime/30/Neon_Genesis_Evangelion"> <img src="img/evangelion.jpg" alt="Eva" style="width:100%;"></a>
-                    <div class="top-left" style="color: white">Anime</div>
-                </div>
-                <div class="container">
-                    <a href="https://anilist.co/manga/104140/Fukakai-na-Boku-no-Subete-wo"><img src="img/fuka.png" alt="Fukakai na Boku no Subete wo" style="width:100%;"></a>
-                    <div class="top-left">Manga</div>
-                </div>
-
-                <div class="container">
-                    <a href="https://myanimelist.net/anime/30/Neon_Genesis_Evangelion"><img src="img\oof.png" alt="This season is garbage" style="width:100%;"></a>
-                    <div class="top-left" style="color:white;">Currently Airing</div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="container">
-                    <a href="https://toarumajutsunoindex.wikia.com/wiki/Accelerator"><img src="img/accel.jpg" alt="Accel" style="width:100%; color:black;"></a>
-                    <div class="top-left">Character</div>
-                </div>
-                <div class="container">
-                    <a href="https://haruhi.wikia.com/wiki/Haruhi_Suzumiya"><img src="img/haruhi.png" alt="Haruhi" style="width:100%; color:black;"></a>
-                    <div class="top-left">Best Girl</div>
-                </div>
-                <div class="container">
-                    <a href="https://anilist.co/anime/99916/Asagao-to-Kasesan/"><img src="img/kase-san.png" alt="Hak" style="width:100%;"></a>
-                    <div class="top-left" style="color:black;">Best Couple</div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="container">
-                    <a href="https://www.archlinux.org/"><img src="img/arch.png" alt="Arch" style="width:100%;"></a>
-                    <div class="top-left" style="color:var(--main-fg-color);">Distro</div>
-                </div>
-                <div class="container">
-                    <a href="https://www.kde.org/plasma-desktop"><img src="img/kde.png" alt="KDE" style="width:100%;"></a>
-                    <div class="top-left" style="color:var(--main-fg-color);">Desktop Environment</div>
-                </div>
-                <div class="container">
-                    <a href="https://www.mozilla.org/en-US/firefox/new/"><img src="img/firefox.png" alt="firefox" style="width:100%;"></a>
-                    <div class="top-left" style="color:var(--main-fg-color);">Browser</div>
-                </div>
-            </div>
+    <div class="cards row" style="height: 7vh">
+      <div class="card col-11">
+        <div class="seperate">
+          <span>
+            <b>Highlights</b>
+          </span>
         </div>
+      </div>
+    </div>
+    <div class="cards row">
+      <a href="https://github.com/skyejonke/yapp">
+        <div class="card col-1 col-3 regular-image">
+          <img src="img/yapp.png"></img>
+          <div class="container normal-size">
+            <h4><b>yapp</b></h4>
+            <p>Yet Another Podcast Player</p>
+          </div>
+        </div>
+      </a>
+      <a href="https://github.com/skyejonke/dog">
+        <div class="card col-3 regular-image">
+          <img src="img/dog.png"></img>
+          <div class="container normal-size">
+            <h4><b>dog</b></h4>
+            <p>A program that lets you play with dogs on the command line!</p>
+          </div>
+        </div>
+      </a>
+      <a href="https://gitlab.com/CatonsvilleHighSocialDevs/ddd">
+        <div class="card col-3 regular-image">
+          <img src="img/ddd.jpg"></img>
+          <div class="container normal-size">
+            <h4><b>DDD</b></h4>
+            <p>A Discord Bot for the Catonsville High School Discord Server</p>
+          </div>
+        </div>
+      </a>
 
-	    <label class="switch">
-		    <input onclick="swapStyleSheet()" id="style" type="checkbox">
-		    <span class="slider round"></span>
-	    </label>
-	    <a rel="me" href="https://queer.party/@biribiri12"></a>
-</body>
+    </div>
 
-	<script src="run.js"></script>
+  </body>
+
+  <script src="jquery.js"></script>
+
+  <script>
+    $(function(){
+      $("#Header").load("header.html");
+    });
+  </script>
+
+  <script src="run.js"></script>
 </html>

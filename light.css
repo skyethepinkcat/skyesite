@@ -1,7 +1,17 @@
 :root{
 	--main-bg-color: #F7BACF;
+	--main-bg-color:  #8c8c8c;
 	--main-fg-color: #0D0009;
 	--main-bg-accent-color: #EBA5BC;
+	--main-bg-accent-color: #ffb3cb;
 	--main-fg-accent-color: #C7C7C7;
 	--main-misc-color: #E6A3BA;
+	--main-emphasis-font-family: "Sofia";
+	--main-emphasis-font-weight: 100;
+	--main-text-font-family: "";
+	--top-text-size: 4vh;
+	--top-icon-size: Calc(var(--top-text-size) + 2vh);
+	--top-height: Calc(var(--top-text-size) + 4vh);
+
+
 }

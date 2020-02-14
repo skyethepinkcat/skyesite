@@ -1,38 +1,19 @@
 <html>
 
-<head>
+	<head>
 
-    <title>Skyenet</title>
-    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link id="pageStyle" rel="stylesheet" type="text/css" title="pastel" href="light.css" \>
-    <link id="pageStyle" rel="stylesheet" type="text/css" title="pastel" href="main.css" \>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-</head>
-	<script src="styleSheet.js"></script>
-<body>
-    <div class=heading>
-        <a href="index.html"><img id="logo" src="img/icon.svg" class="logo"></a>
-        <h4>
-            <ul class="direct">
-                <li class="direct">
-                    <a class="direct" href="index.html">Home</a> |
-                </li>
-                <li class="direct">
-                    <a class="direct" href="about.html">About</a> |
-                </li>
-                <li class="direct">
-                    <a class="direct" href="projects.html">Projects</a> |
-                </li>
-                <li class="direct">
-                    <a class="direct" href="homepage.html">Homepage</a>
-                </li>
-            </ul>
-        </h4>
-    </div>
-<pre class="poem">
-The Beach
-
+		<title>Skyenet</title>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<link id="pageStyle" rel="stylesheet" type="text/css" title="pastel" href="light.css" \>
+		<link id="pageStyle" rel="stylesheet" type="text/css" title="pastel" href="main.css" \>
+	</head>
+	<body>
+		<div id="Header"></div>
+		<div class="cards poem-card">
+			<div id="beach" class="card poems col-11">
+				<div class="container">
+					<h4><b>The Beach</b></h4>
+					<pre class="poem" style="overflow: hidden;">
 I tread over brimstone sand and into a blazing blue tent.
 The well-fitting swim shirt remains baggy to my heart,
 and my leg hair stabs gruesomely, mercilessly.
@@ -66,11 +47,17 @@ It's a world where an ice skater of estrogen ambrosia
 is flowing through me. I'm sitting next to Reiner.
 I'm opening presents of dolls, not trains. I'm wearing
 flashy dresses to middle-school prom.
-I'm happily playing on the beach. 
-</pre>
-<hr>
-    <pre class="poem">A Boy and a Girl
-
+I'm happily playing on the beach.
+					</pre>
+				</div>
+			</div>
+			</a>
+		</div>
+		<div class="cards">
+			<div id="girl" class="card poems col-11">
+				<div class="container">
+					<h4><b>A Boy and a Girl</b></h4>
+					<pre class="poem" style="overflow: hidden;">
 In the Sixth Grade, two eyes met.
 Boy and girl, in the hallway.
 Then, a push and pull, the crowd moved them.
@@ -109,11 +96,15 @@ In a church, two brides approached each other.
 Lifting their veils, a kiss to seal a contract.
 Looking into their eyes, each said
 the whispered opinion, "I love you," now a fact.
-</pre>
-    <hr>
-    <pre class="poem">
-Who am I?
-
+					</pre>
+				</div>
+			</div> </a>
+		</div>
+		<div class="cards poem-card">
+			<div id="who" class="card poems col-11">
+				<div class="container">
+					<h4><b>Who Am I</b></h4>
+					<pre class="poem" style="overflow: hidden;">
 Who the hell am I?
 Sitting in an enigma of fog and confusion,
 my life is a series of masks
@@ -143,9 +134,15 @@ I put on masks to satisfy others.
 My life is simply a series of masks.
 Remove the mask, and who is underneath?
 Who the hell am I?
-</pre>
-    <hr>
-    <pre class="poem">
+					</pre>
+				</div>
+			</div>
+			</a>
+		</div>
+		<div class="cards poem-card" >
+			<div id="devil" class="card poems col-11">
+				<div class="container">
+					<pre class="poem" style="overflow: hidden;">
 Decent? Virtuous?
 Not just now,
 putting my aptitude to the test.
@@ -155,11 +152,16 @@ the devil.
 We belonged to completely different worlds.
 I'd lost count of how many times I'd asked the question.
 "What do you want?"
-</pre>
-    <hr>
-<pre class="poem">
-Gentoo Solves Everything
-
+					</pre>
+				</div>
+			</div>
+			</a>
+		</div>
+		<div class="cards poem-card" >
+			<div id="gentoo" class="card poems col-11">
+				<div class="container">
+					<h4><b>Gentoo Solves Everything</b></h4>
+					<pre class="poem" style="overflow: hidden;">
 You're sitting there, blue screen of death.
 Using win10 is like joining Geth.
 So right now I will advise you:
@@ -179,19 +181,25 @@ Your spouse has left, you're done with life,
 you're bankrupt, all you've got: a knife.
 The tip pointed at your chest, aimed true.
 Why don't you just install Gentoo?
-</pre>
-    <hr>
-<pre class="poem">
-666
 
-Now is the devil's
-hour. Clocks tick, pens sway, and
-arms rest for the day.
-</pre>
-<hr>	
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-
-</body>
+					</pre>
+				</div>
+			</div>
+			</a>
+		</div>
+	</body>
 
 	<script src="run.js"></script>
+	<script src="jquery.js"></script>
+
+	<script>
+
+		$(function(){
+
+			$("#Header").load("header.html");
+
+		});
+
+	</script>
+
 </html>
