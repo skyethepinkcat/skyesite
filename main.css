@@ -588,6 +588,9 @@ a{
     border-top-right-radius: 0vh; /* 5px rounded corners */
     border-bottom-left-radius: 1vh; /* 5px rounded corners */
   }
+  #ava {
+    width: 100%;
+  }
 }
 
 .poem-card{
