@@ -15,7 +15,19 @@
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
+.col6-1 {width: 14.2856%;}
+.col6-2 {width: 28.57%;}
+.col6-3 {width: 42.857%;}
+.col6-4 {width: 57.142%;}
+.col6-5 {width: 71.4276%;}
+.col6-6 {width: 85.713%;}
+.col6-6 {width: 100%;}
+
+
 [class*="col-"] {
+  float: left;
+}
+[class*="col6-"] {
   float: left;
 }
 .row::after {
@@ -27,6 +39,9 @@
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   [class*="col-"] {
+    width: 90%;
+  }
+  [class*="col6-"] {
     width: 90%;
   }
 }
@@ -114,7 +129,7 @@ li.direct {
 }
 
 .poem {
-  font-size: 15pt;
+  font-size: 2vh;
   font-family: "Times New Roman";
   color: var(--main-fg-color);
 }
@@ -262,7 +277,7 @@ li.direct {
 #search{
   background-color: var(--main-bg-accent-color);
   color: var(--main-fg-color);
-  border: 2px solid var(--main-fg-accent-color);
+  border: unset;
 }
 .switch {
 
@@ -392,6 +407,7 @@ input:checked + .slider:before {
 
 .card {
   padding: 0px;
+  overflow: hidden;
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   float: left;
@@ -400,6 +416,8 @@ input:checked + .slider:before {
   border-radius: 2vh; /* 5px rounded corners */
   height: 100%;
   margin: 0vh 4vw 0vh 4vw;
+  top:50%;
+  font-size: 1em;
 
 }
 
@@ -423,8 +441,7 @@ input:checked + .slider:before {
 
 .container:link{
   text-decoration: none;
-  color: var(--main-fg-color);
-}
+color: var(--main-fg-color); }
 .container:visited{
   text-decoration: none;
   color: var(--main-fg-color);
@@ -450,6 +467,7 @@ a{
 
 /* Add some padding inside the card container */
 .container {
+  overflow:hidden;
   padding: 2px 16px;
 }
 
@@ -506,11 +524,25 @@ a{
     display: block;
   }
   .topnav {
-    background-color: var(--main-fg-accent-color);
+    background-color: var(--main-bg-accent-color);
+    background-image: initial;
   }
 
   .avatar{
     width: 100%;
+  }
+
+  #about:hover, #about:active{
+    height: 66vh;
+    font-size: 1.5vh;
+  }
+
+  #avatar img{
+    height: 30vh;
+  }
+
+  #avatar:hover img {
+    height: 30vh;
   }
 }
 
@@ -518,7 +550,7 @@ a{
 @media screen and (max-width: 600px) {
   .topnav.responsive {
     position: relative;
-    background-image: linear-gradient(var(--main-bg-accent-color), var(--main-fg-accent-color) 34%);
+    background-image: linear-gradient(var(--main-bg-accent-color)20%, var(--main-fg-accent-color) 34%);
   }
   .topnav.responsive a.icon {
     /*background-color: var(--main-fg-accent-color); */
@@ -537,6 +569,11 @@ a{
   .card{
     margin-top: 2vh;
   }
+
+  .about{
+    font-size: initial;
+  }
+
 }
 
 .invisible {
@@ -549,6 +586,7 @@ a{
 
 
 
+
 @media screen and (min-width: 600px) {
   img.avatar{
     height: 100%;
@@ -556,4 +594,68 @@ a{
     border-top-right-radius: 0vh; /* 5px rounded corners */
     border-bottom-left-radius: 1vh; /* 5px rounded corners */
   }
+}
+
+.poem-card{
+  margin: 1.5vh 0vw 1.5vh 0vw;
+}
+
+.poems{
+  height: 39vh;
+  font-size: 4vh;
+  /*padding: 0px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  float: left;
+  transition: 0.3s;
+  background-color: var(--main-bg-accent-color);
+  border-radius: 2vh;
+  height: 100%;
+  margin: 0vh 4vw 0vh 4vw;
+  top: 50%;
+   */
+}
+
+.extend {
+  transition: height .3s;
+  overflow: hidden;
+}
+
+.poems pre {
+  /*
+  margin-left: 20%;
+  margin-right: 30%;
+   */
+}
+
+#beach:hover, #beach:active { height:96vh; }
+#girl:hover, #girl:active { height:105vh; }
+#social:hover, #social:active { height:54vh; }
+#school:hover, #school:active { height:25vh; }
+#dev:hover, #dev:active { height: 49vh; }
+#mail:hover, #mail:active {height: 25vh; }
+#feeds:hover, #feeds:active {height: 15vh; }
+#media:hover, #media:active {height: 35vh; }
+
+.normal-size {
+  font-size: 1.5vh;
+}
+
+.home {
+  height: 6vh;
+  font-weight: lighter;
+  color: var(--main-fg-color);
+  font-size: 4vh;
+  text-align: center;
+
+}
+.home, .home a {
+  font-size: 4.3vh;
+}
+.home:hover{
+  z-index: 10;
+}
+
+.home-card {
+  margin-left: 1vw;
+  margin-right: 1vw;
 }

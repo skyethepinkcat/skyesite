@@ -11,7 +11,63 @@
 
   <body>
     <div id="Header"></div>
-    <div id="file"></div>
+    <div class="cards poem-card">
+        <div id="about" class="card poems col-11">
+          <div class="col-4 avatar ">
+            <img id="ava" class="avatar" src="img/skye.jpg"></img>
+          </div>
+          <div class="normal-size container col-7" >
+            <h4><b>About Me</b></h4>
+
+            My name is Skye Jonke and my pronouns are she/her. I'm a university
+            student majoring in computer science. My hobbies include coding,
+            writing fiction, and watching anime. I'm particularly interested in
+            creating and contributing to Open Source code. I specialize in C++,
+            but I dabble in higher level programming languages like python.
+
+          </div>
+        </div>
+    </div>
+    <div class="cards row" style="height: 7vh">
+      <div class="card col-11">
+        <div class="seperate">
+          <span>
+            <b>Highlights</b>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="cards row">
+      <a href="https://github.com/skyejonke/yapp">
+        <div class="card col-1 col-3">
+          <img src="img/yapp.png"></img>
+          <div class="container normal-size">
+            <h4><b>yapp</b></h4>
+            <p>Yet Another Podcast Player</p>
+          </div>
+        </div>
+      </a>
+      <a href="https://github.com/skyejonke/dog">
+        <div class="card col-3">
+          <img src="img/dog.png"></img>
+          <div class="container normal-size">
+            <h4><b>dog</b></h4>
+            <p>A program that lets you play with dogs on the command line!</p>
+          </div>
+        </div>
+      </a>
+      <a href="https://gitlab.com/CatonsvilleHighSocialDevs/ddd">
+        <div class="card col-3">
+          <img src="img/ddd.jpg"></img>
+          <div class="container normal-size">
+            <h4><b>DDD</b></h4>
+            <p>A Discord Bot for the Catonsville High School Discord Server</p>
+          </div>
+        </div>
+      </a>
+
+    </div>
+
   </body>
 
   <script src="jquery.js"></script>
@@ -19,7 +75,6 @@
   <script>
     $(function(){
       $("#Header").load("header.html");
-      $("#file").load("main.html");
     });
   </script>
 
