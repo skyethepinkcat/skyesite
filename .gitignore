@@ -4,3 +4,4 @@ nextcloud
 *.swp
 bee/
 nextcloud
+.vimsessions
