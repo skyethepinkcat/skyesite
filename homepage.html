@@ -171,7 +171,7 @@ body.addEventListener("keydown", function (e) {
 });
 function searchURL(e){
   console.log(e);
-  window.location = "https://www.ecosia.org/search?q=" + document.getElementById('search').value;
+  window.location = "https://www.ecosia.org/search?q=" + encodeURIComponent(document.getElementById('search').value);
 }
   </script>
   <script src="jquery.js"></script>
