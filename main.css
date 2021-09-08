@@ -129,7 +129,6 @@ li.direct {
 }
 
 .poem {
-  font-size: 2vh;
   font-family: "Times New Roman";
   color: var(--main-fg-color);
 }
@@ -207,19 +206,6 @@ li.direct {
   margin: 1vh;
 
 }
-
-.divlogo {
-  /*
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  margin: auto;
-  padding: 10px;
-  justify-content: left;
-   */
-}
-
-
 
 .dropdown {
   display: inherit;
@@ -394,8 +380,6 @@ input:checked + .slider:before {
 
 }
 
-.cards {
-}
 
 .card {
   padding: 0px;
@@ -407,8 +391,8 @@ input:checked + .slider:before {
   background-color: var(--main-bg-accent-color);
   border-radius: 2vh; /* 5px rounded corners */
   height: 100%;
-  margin: 0vh 4vw 0vh 4vw;
-  top:50%;
+  margin: 1.5vh 4vw 0vh 4vw;
+  top: 50%;
   font-size: 1em;
 
 }
@@ -501,8 +485,8 @@ a{
 }
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  #background-color: var(--main-bg-accent-color);
-  #background-image: linear-gradient(to right, var(--main-bg-accent-color) 85%, var(--main-fg-accent-color));
+  /*#background-color: var(--main-bg-accent-color);
+  #background-image: linear-gradient(to right, var(--main-bg-accent-color) 85%, var(--main-fg-accent-color)); */
   color: var(--main-fg-color);
 }
 
@@ -568,6 +552,9 @@ a{
     font-size: initial;
   }
 
+  .poems{
+    overflow: scroll;
+  }
 }
 
 .invisible {
@@ -580,6 +567,19 @@ a{
 
 
 
+.poems{
+  font-size: 2vh;
+  padding: 1vh 2vw;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: var(--main-bg-accent-color);
+  border-radius: 2vh;
+  height: auto;
+  width:fit-content;
+  white-space: nowrap;
+  margin: 1.5vh 0vw 1.5vh 0vw;
+  top: 50%;
+   
+}
 
 @media screen and (min-width: 600px) {
   img.avatar{
@@ -591,57 +591,15 @@ a{
   #ava {
     width: 100%;
   }
+
 }
 
-.poem-card{
-  margin: 1.5vh 0vw 1.5vh 0vw;
-}
-
-.poems{
-  height: 39vh;
-  font-size: 4vh;
-  /*padding: 0px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  float: left;
-  transition: 0.3s;
-  background-color: var(--main-bg-accent-color);
-  border-radius: 2vh;
-  height: 100%;
-  margin: 0vh 4vw 0vh 4vw;
-  top: 50%;
-   */
-z-index: 1;
-}
-.poems:hover, .poems:active{
-  z-index: 2;
-}
-
-
-A Boy and a Girl
-
-
-
-In the Sixth Grade, two eyes met.
 
 
 .extend {
   transition: height .3s;
   overflow: hidden;
 }
-
-.poems pre {
-  /*
-  margin-left: 20%;
-  margin-right: 30%;
-   */
-}
-
-#beach:hover, #beach:active { height:95vh; }
-#girl:hover, #girl:active { height:104vh; }
-#who:hover, #who:active { height: 83vh; }
-#devil {height: 15vh;}
-#devil:hover, #devil:active { height: 23vh; }
-#gentoo:hover, #gentoo:active { height: 60vh; }
 
 #social:hover, #social:active { height:63vh; }
 #school:hover, #school:active { height:25vh; }
@@ -680,4 +638,9 @@ In the Sixth Grade, two eyes met.
 
 #about{
   height: 38vh;
+}
+
+h4:after {
+  content:"\a";
+  white-space: pre;
 }
