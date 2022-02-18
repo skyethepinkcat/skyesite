@@ -67,7 +67,7 @@ br {
 
 h1 {
   font-size: 50pt;
-  font-family: "Sofia";
+  font-family: var(--main-text-font-family);
   margin: 20px 20px 20px 20px;
   font-weight: lighter;
 }
@@ -563,7 +563,7 @@ a{
   white-space: nowrap;
   margin: 1.5vh 0vw 1.5vh 0vw;
   top: 50%;
-   
+
 }
 
 @media screen and (min-width: 600px) {
