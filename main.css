@@ -52,6 +52,7 @@ body {
   flex-flow: column;
   height: 100%;
   margin: 0;
+  font-family: var(--main-text-font-family);
 
 }
 br {
@@ -107,7 +108,6 @@ li.direct {
 .direct {
   font-family: "Sofia";
   font-weight: --var(--main-emphasis-font-weight);
-  font-weight: lighter;
 
   color: var(--main-fg-color);
   border: 0;
@@ -118,7 +118,7 @@ li.direct {
 .content {
   text-align: center;
   color: var(--main-fg-color);
-  font-family: "Arial";
+  font-family: "Sofia";
 }
 
 .about {
