@@ -7,12 +7,10 @@
 	--main-bg-accent-color: #ffb3cb;
 	--main-fg-accent-color: #C7C7C7;
 	--main-misc-color: #E6A3BA;
-	--main-emphasis-font-family: "Sofia";
+	--main-emphasis-font-family: "Fira Sans";
 	--main-emphasis-font-weight: 300;
-	--main-text-font-family: "Fire Sans";
+	--main-text-font-family: "Fira Sans";
 	--top-text-size: 4vh;
 	--top-icon-size: Calc(var(--top-text-size) + 2vh);
 	--top-height: Calc(var(--top-text-size) + 4vh);
-
-
 }

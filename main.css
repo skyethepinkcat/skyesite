@@ -106,9 +106,7 @@ li.direct {
 }
 
 .direct {
-  font-family: "Sofia";
-  font-weight: --var(--main-emphasis-font-weight);
-
+  font-family: "Fira Sans";
   color: var(--main-fg-color);
   border: 0;
   margin: 0;
@@ -118,7 +116,7 @@ li.direct {
 .content {
   text-align: center;
   color: var(--main-fg-color);
-  font-family: "Sofia";
+  font-family: var(--main-text-font-family);
 }
 
 .about {
@@ -258,32 +256,19 @@ li.direct {
   border: unset;
 }
 .switch {
-
   position: relative;
-
   display: inline-block;
-
   width: 60px;
-
   height: 34px;
-
 }
-
-
 
 /* Hide default HTML checkbox */
 
 .switch input {
-
   opacity: 0;
-
   width: 0;
-
   height: 0;
-
 }
-
-
 
 /* The slider */
 
@@ -601,12 +586,12 @@ a{
   overflow: hidden;
 }
 
-#social:hover, #social:active { height:63vh; }
-#school:hover, #school:active { height:25vh; }
-#dev:hover, #dev:active { height: 49vh; }
-#mail:hover, #mail:active {height: 34vh; }
-#feeds:hover, #feeds:active {height: 15vh; }
-#media:hover, #media:active {height: 35vh; }
+#social:hover, #social:active { height:64vh; }
+#school:hover, #school:active { height:26vh; }
+#dev:hover, #dev:active { height: 50vh; }
+#mail:hover, #mail:active {height: 35vh; }
+#feeds:hover, #feeds:active {height: 16vh; }
+#media:hover, #media:active {height: 36vh; }
 
 .normal-size {
   font-size: 1.5vh;
